@@ -1,5 +1,34 @@
-public class Dancer extends Person  {
-    private String groupName;
+public class Shark extends Animal  {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public Shark(String name) {
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void attack(){
+        System.out.println(getName()+"is attack");
+    }
+    @Override
+    public void eat() {
+        System.out.println(getName()+"is eating!");
+    }
+
+    @Override
+    public String toString() {
+        return "Shark{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}
+/*
+  private String groupName;
     public String getGroupName() {
         return groupName;
     }
@@ -25,4 +54,4 @@ public class Dancer extends Person  {
     public void learn() {
         System.out.println(getName()+" is learning!");
     }
-}
+ */
